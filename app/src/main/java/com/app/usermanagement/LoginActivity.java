@@ -26,6 +26,9 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
         login = findViewById(R.id.btn_login);
         registerLink = findViewById(R.id.registerLink);
 
+        registerLink.setOnClickListener(this);
+        login.setOnClickListener(this);
+
     }
 
     @Override
@@ -36,6 +39,7 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
                 break;
             case R.id.registerLink:
                 switchOnRegister();
+                break;
         }
 
     }

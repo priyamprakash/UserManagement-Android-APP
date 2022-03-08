@@ -24,6 +24,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         password = findViewById(R.id.et_password);
         register = findViewById(R.id.btn_register);
 
+        loginLink.setOnClickListener(this);
+        register.setOnClickListener(this);
+
     }
 
     @Override
@@ -34,6 +37,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 break;
             case R.id.loginLink:
                 switchOnLogin();
+                break;
         }
     }
 
